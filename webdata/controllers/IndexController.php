@@ -4,7 +4,7 @@ class IndexController extends Pix_Controller
 {
     public function init()
     {
-        $this->doc = new Doc();
+        $this->doc = Doc::instance();
     }
     public function indexAction()
     {
