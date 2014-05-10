@@ -1,0 +1,24 @@
+body {
+    padding-top: 40px;
+}
+
+/* override bootstrap */
+.navbar-brand {
+    padding: 10px;
+    height: 40px;
+}
+.navbar-nav li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 40px;
+}
+.navbar {
+    min-height: 40px;
+}
+.navbar-nav li .dropdown-menu {
+    background-color: #222;
+    border-color: #101010;
+}
+.dropdown-menu li a {
+    color: #999;
+}
