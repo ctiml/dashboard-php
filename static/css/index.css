@@ -49,10 +49,17 @@
     padding-top: 5px;
     padding-bottom: 5px;
 }
+.dashboard .index ul li .link img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: -2px;
+}
 .dashboard .index ul li .link i {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 10px;
+    margin: 0;
 }
 .dashboard .index ul li li .link {
     padding-left: 35px;
