@@ -58,7 +58,8 @@
 .dashboard .index ul li .link i {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 15px;
     margin: 0;
 }
 .dashboard .index ul li li .link {
