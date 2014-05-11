@@ -5,21 +5,67 @@
     display: box;
     display: flex;
 }
-.index {
+.dashboard a {
+    text-shadow: 0 0 2px rgba(32,32,32,.2);
+    text-decoration: none;
+    color: #333;
+}
+.dashboard .index {
     background-color: #f9f9f9;
     display: block;
-    width: 200px;
+    width: 250px;
     height: 800px;
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
-    padding-top: 15px;
-    padding-right: 15px;
+    /*padding-top: 15px;*/
+    /*padding-right: 15px;*/
     font-size: 1.2em;
     border-right: solid 3px #888;
     cursor: w-resize;
 }
-.content {
+.dashboard .index ul {
+    margin: 0;
+    padding: 0;
+}
+.dashboard .index ul li {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    line-height: 1.6
+}
+.dashboard .index ul li .link {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    left: 0;
+    padding-left: 15px;
+    -webkit-transition: .15s;
+    -moz-transition: .15s;
+    -o-transition: .15s;
+    -ms-transition: .15s;
+    transition: .15s;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.dashboard .index ul li .link i {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.dashboard .index ul li li .link {
+    padding-left: 35px;
+}
+.dashboard .index ul li .link:hover {
+    background-color: #444;
+    color: #fff;
+}
+.dashboard .index ul li.active .link {
+    background-color: #333;
+    color: #eee;
+}
+.dashboard .content {
     background-color: #eee;
     position: relative;
     display: block;
@@ -34,7 +80,7 @@
     -ms-flex:1;
     flex:1;
 }
-.content iframe {
+.dashboard .content iframe {
     position: absolute;
     top: 0;
     bottom: 0;
