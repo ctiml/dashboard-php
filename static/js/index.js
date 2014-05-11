@@ -44,6 +44,9 @@ var Index = Index || (function() {
   var _registerEvents = function() {
     _container.find('a.link').click(function(e) {
       e.preventDefault();
+      if ($(this).parents('li').first().hasClass('active')) {
+        return;
+      }
       var url = $(this).attr('href');
       if (_isSupported(url) && _target !== null && _target !== undefined) {
         _target.find('.iframe-container').hide();
