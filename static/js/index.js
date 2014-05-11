@@ -77,6 +77,7 @@ var Index = Index || (function() {
     if (!url) return false;
     if (url.match(/^http(s)?:\/\/docs\.google\.com\/.*\/document/)) { return 'google_document.png'; }
     if (url.match(/^http(s)?:\/\/docs\.google\.com\/.*\/spreadsheet/)) { return 'google_spreadsheet.png'; }
+    if (url.match(/^http(s)?:\/\/docs\.google\.com/)) { return 'google_drive.png'; }
     if (url.match(/^http(s)?:\/\/drive\.google\.com/)) { return 'google_drive.png'; }
     if (url.match(/^http(s)?:\/\/\w+\.hackpad\.com/)) { return 'hackpad'; }
     if (url.match(/^http(s)?:\/\/ethercalc\.org\//)) { return 'ethercalc'; }
